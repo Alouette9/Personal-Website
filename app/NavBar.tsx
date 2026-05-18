@@ -32,6 +32,7 @@ export default function NavBar() {
             <li>
               <Link
                 href="/reads"
+                accessKey="r"
                 style={{
                   ...styles.navLink,
                   ...(pathname === "/reads" ? styles.navLinkActive : {}),

@@ -136,7 +136,7 @@ export default function Home() {
           <h2 id="keyboard-heading" style={styles.sectionHeading}>Keyboard Access Guide</h2>
           <div style={styles.keyboardCard}>
             <p style={styles.bodyText}>
-              This site is fully navigable by keyboard. Here is how to get around:
+              This site is fully navigable by keyboard. Here is how to do it:
             </p>
             <table style={styles.keyTable} aria-label="Keyboard shortcuts">
               <thead>
@@ -151,6 +151,7 @@ export default function Home() {
                   ["Shift + Tab", "Move backward through interactive elements"],
                   ["Enter / Space", "Activate a focused button or link"],
                   ["Enter", "Follow a focused link"],
+                  ["Alt+R（Windows）", "Navigate to UW useful links page"],
                   ["Skip link (first Tab)", "Jump directly to main content, bypassing the nav bar"],
                 ].map(([key, desc]) => (
                   <tr key={key}>
@@ -160,12 +161,7 @@ export default function Home() {
                 ))}
               </tbody>
             </table>
-            <p style={{ ...styles.bodyText, marginTop: "1rem" }}>
-              <strong>Focus goal:</strong> Every interactive element on this site shows a visible green outline
-              when focused, so keyboard users always know where they are. This follows the usability principle
-              of <em>visibility of system status</em> — the interface should always keep users informed about
-              what is currently selected or active.
-            </p>
+
           </div>
         </section>
 
