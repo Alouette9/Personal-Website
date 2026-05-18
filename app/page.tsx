@@ -170,7 +170,7 @@ export default function Home() {
         </section>
 
         <footer style={styles.footer}>
-          <p style={styles.footerText}>Built with React · CSS 480 · University of Washington · 2026</p>
+          <p style={styles.footerText}>CSS 480 · University of Washington Bothell</p>
         </footer>
       </main>
     </div>

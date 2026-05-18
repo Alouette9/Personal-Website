@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 
 const LINKS = [
   { title: "UW Homepage",                    url: "https://www.washington.edu",                                          desc: "University of Washington main website" },
-  { title: "UW Bothell",                     url: "https://www.uwb.edu",                                                 desc: "UW Bothell campus — where I study" },
+  { title: "UW Bothell",                     url: "https://www.uwb.edu",                                                 desc: "UW Bothell campus" },
   { title: "UW CSE Department",              url: "https://www.cs.washington.edu",                                       desc: "Paul G. Allen School of Computer Science & Engineering" },
   { title: "UW Libraries",                   url: "https://lib.washington.edu",                                          desc: "Research databases, journals, and study resources" },
   { title: "UW IT Connect",                  url: "https://itconnect.uw.edu",                                            desc: "Technology guides and tools for UW students" },
@@ -18,17 +18,13 @@ export default function ReadsPage() {
     <div style={styles.page}>
       <header style={styles.header}>
         <div style={styles.headerInner}>
-          <h1 style={styles.pageTitle}>Things to Read</h1>
-          <p style={styles.tagline}>University of Washington resources I find useful</p>
         </div>
       </header>
 
       <main id="main-content" style={styles.main}>
         {/* Keyboard guide */}
         <section style={styles.section} aria-labelledby="keyboard-heading">
-          <h2 id="keyboard-heading" style={styles.sectionHeading}>Keyboard Access Guide</h2>
           <div style={styles.keyboardCard}>
-            <p style={styles.bodyText}>All links on this page are keyboard accessible:</p>
             <table style={styles.keyTable} aria-label="Keyboard shortcuts">
               <thead>
                 <tr>
@@ -55,7 +51,7 @@ export default function ReadsPage() {
 
         {/* Links */}
         <section style={styles.section} aria-labelledby="links-heading">
-          <h2 id="links-heading" style={styles.sectionHeading}>Links ({LINKS.length})</h2>
+          <h2 id="links-heading" style={styles.sectionHeading}>Links of UW</h2>
           <ul style={styles.linkList} aria-label="Reading list">
             {LINKS.map((link, i) => (
               <li key={link.url} style={styles.linkItem}>
@@ -78,7 +74,7 @@ export default function ReadsPage() {
         </section>
 
         <footer style={styles.footer}>
-          <p style={styles.footerText}>Built with React · CSS 480 · University of Washington · 2026</p>
+          <p style={styles.footerText}>CSS 480 · University of Washington Bothell</p>
         </footer>
       </main>
     </div>

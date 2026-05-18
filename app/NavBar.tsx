@@ -38,7 +38,7 @@ export default function NavBar() {
                 }}
                 aria-current={pathname === "/reads" ? "page" : undefined}
               >
-                Things to Read
+                UW useful links
               </Link>
             </li>
           </ul>
