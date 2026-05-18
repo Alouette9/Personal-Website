@@ -160,7 +160,7 @@ export default function Home() {
                 ))}
               </tbody>
             </table>
-            <p style={styles.bodyText} style={{ marginTop: "1rem" } as CSSProperties}>
+            <p style={{ ...styles.bodyText, marginTop: "1rem" }}>
               <strong>Focus goal:</strong> Every interactive element on this site shows a visible green outline
               when focused, so keyboard users always know where they are. This follows the usability principle
               of <em>visibility of system status</em> — the interface should always keep users informed about
