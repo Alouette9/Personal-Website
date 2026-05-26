@@ -133,7 +133,7 @@ export default function DogsPage() {
         </section>
 
         <section style={s.breedsSection} aria-labelledby="breeds-heading">
-          <h2 id="breeds-heading" style={s.sectionHeading}>My Favorite Breeds ({BREEDS.length})</h2>
+          <h2 id="breeds-heading" style={s.sectionHeading}> Some Breeds (adding more in the future) ({BREEDS.length})</h2>
           <div style={s.cardGrid}>
             {BREEDS.map((breed) => (
               <article key={breed.id} style={s.card} aria-labelledby={`breed-${breed.id}`}>
